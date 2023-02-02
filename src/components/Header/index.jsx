@@ -9,14 +9,16 @@ export default function Header() {
   });
 
   return (
-    <header className="flex justify-between pt-10">
+    <header className="flex flex-col pt-10 md:flex-row md:justify-between">
       <div>
-        <h1 className="text-4xl font-bold tracking-wide">
+        <h1 className="text-3xl font-bold tracking-wide md:text-4xl">
           Social Media Dashboard
         </h1>
-        <p className="pt-1 text-xl text-slate-500">Total Followers: {sum}</p>
+        <p className="pt-1 text-lg md:text-xl text-slate-500">
+          Total Followers: {sum}
+        </p>
       </div>
-      <div>
+      <div className="mt-5">
         <Theme />
       </div>
     </header>

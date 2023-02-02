@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Card from "@/components/Card";
 import datas from "@/data";
 import Overview from "@/components/Overview";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,10 @@ export default function Home({ cards, overview }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${inter.className} m-auto`}>
-        <div className="m-auto max-w-7xl">
+      <main className={`${inter.className}`}>
+        <div className="w-10/12 m-auto max-w-7xl">
           <Header />
-          <div className="grid grid-cols-1 gap-8 mt-16 ml-4 mr-4 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 mt-16 ml-auto mr-auto place-content-between sm:grid-cols-2 xl:grid-cols-4">
             {cards.map((card, index) => {
               return (
                 <Card
@@ -38,10 +39,10 @@ export default function Home({ cards, overview }) {
               );
             })}
           </div>
-          <h1 className="mt-16 mb-6 text-3xl font-bold text-slate-500">
+          <h1 className="mt-16 mb-6 text-2xl font-bold md:text-3xl text-slate-500">
             Overview - Today
           </h1>
-          <div className="grid grid-cols-4 gap-8 mt-4">
+          <div className="grid grid-cols-1 gap-8 mt-4 ml-auto mr-auto place-content-between sm:grid-cols-2 xl:grid-cols-4">
             {overview.map((card, index) => {
               return (
                 <Overview
@@ -58,6 +59,7 @@ export default function Home({ cards, overview }) {
               );
             })}
           </div>
+          <Footer />
         </div>
       </main>
     </>

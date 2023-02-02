@@ -14,11 +14,11 @@ export default function Card({
       <span className="absolute w-full h-1 bg-blue-300" />
       <div className="flex items-center gap-2 mt-8 ">
         <Image src={image} alt="facebook" width={24} height={24} />
-        <p className="text-sm">{username}</p>
+        <p className="text-sm font-semibold text-slate-500">@{username}</p>
       </div>
       <div className="mt-5">
-        <p className="text-[64px] font-black">{followers}</p>
-        <p className="-mt-4 text-xl font-light tracking-widest uppercase">
+        <p className="text-[64px] font-bold tracking-wider">{followers}</p>
+        <p className="-mt-4 text-lg font-light tracking-[0.3em] uppercase text-slate-400">
           {type == "followers" ? "followers" : "subscriber"}
         </p>
       </div>

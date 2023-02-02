@@ -15,8 +15,8 @@ export default function Overview({
     <div>
       <div className="relative flex flex-col items-center bg-[#F0F3FC] dark:bg-[#252B43] h-auto rounded overflow-hidden cursor-pointer hover:bg-[#E1E3F0] dark:text-[#FDFEF9] dark:hover:bg-[#333A56] transition-all duration-300 ease-in">
         <div className="flex items-end justify-between w-9/12 gap-2 mt-8">
-          <p className="text-base">{sectionName}</p>
-          <Image src={image} alt="facebook" width={24} height={24} />
+          <p className="text-base font-medium text-slate-500">{sectionName}</p>
+          <Image src={image} alt="image" width={24} height={24} />
         </div>
 
         <div className="flex items-end justify-between w-9/12 gap-1 mt-5 mb-6">
