@@ -1,7 +1,7 @@
 const datas = {
   data: [
     {
-      icon: "./../images/facebook.png",
+      icon: "/images/facebook.png",
       name: "facebook",
       username: "nathanf",
       type: "followers",
@@ -10,7 +10,7 @@ const datas = {
       isUp: true,
     },
     {
-      icon: "/../public/images/twitter.png",
+      icon: "/images/twitter.png",
       name: "twitter",
       username: "nathanf",
       type: "followers",
@@ -19,7 +19,7 @@ const datas = {
       isUp: true,
     },
     {
-      icon: "/../public/images/instagram.png",
+      icon: "/images/instagram.png",
       name: "instagram",
       username: "realnathanf",
       type: "followers",
@@ -28,7 +28,7 @@ const datas = {
       isUp: true,
     },
     {
-      icon: "/../public/images/youtube.png",
+      icon: "/images/youtube.png",
       name: "youtube",
       username: "Nathan F.",
       type: "subscribers",
@@ -40,7 +40,7 @@ const datas = {
   overview: [
     {
       name: "facebook-views",
-      icon: "/../public/images/facebook.png",
+      icon: "/images/facebook.png",
       sectionName: "Page Views",
       isUp: true,
       count: 87,
@@ -48,7 +48,7 @@ const datas = {
     },
     {
       name: "facebook-likes",
-      icon: "/../public/images/facebook.png",
+      icon: "/images/facebook.png",
       isUp: true,
       sectionName: "Likes",
       count: 52,
@@ -56,7 +56,7 @@ const datas = {
     },
     {
       name: "instagram-likes",
-      icon: "/../public/images/instagram.png",
+      icon: "/images/instagram.png",
       isUp: true,
       sectionName: "Likes",
       count: 5462,
@@ -64,7 +64,7 @@ const datas = {
     },
     {
       name: "instagram-views",
-      icon: "/../public/images/instagram.png",
+      icon: "/images/instagram.png",
       isUp: true,
       sectionName: "Profile Views",
       count: 52000,
@@ -72,7 +72,7 @@ const datas = {
     },
     {
       name: "retweets",
-      icon: "/../public/images/twitter.png",
+      icon: "/images/twitter.png",
       isUp: true,
       sectionName: "Retweets",
       count: 117,
@@ -80,7 +80,7 @@ const datas = {
     },
     {
       name: "twitter-likes",
-      icon: "/../public/images/twitter.png",
+      icon: "/images/twitter.png",
       isUp: true,
       sectionName: "Likes",
       count: 507,
@@ -88,7 +88,7 @@ const datas = {
     },
     {
       name: "youtube-likes",
-      icon: "/../public/images/youtube.png",
+      icon: "/images/youtube.png",
       isUp: false,
       sectionName: "Likes",
       count: 107,
@@ -96,7 +96,7 @@ const datas = {
     },
     {
       name: "youtube-views",
-      icon: "/../public/images/youtube.png",
+      icon: "/images/youtube.png",
       isUp: false,
       sectionName: "Total Views",
       count: 1407,
