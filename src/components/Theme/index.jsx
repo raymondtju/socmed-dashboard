@@ -3,14 +3,11 @@ import React, { useEffect, useState } from "react";
 
 const Theme = () => {
   const [darkTheme, setDarkTheme] = useState(false);
-  //   console.log(darkTheme);
   useEffect(() => {
     if (localStorage.getItem("theme") === "true") {
-      console.log(document.documentElement.classList);
       setDarkTheme(true);
       document.documentElement.classList.add("dark");
     } else {
-      console.log(document.documentElement.classList);
       setDarkTheme(false);
       document.documentElement.classList.remove("dark");
     }
@@ -32,7 +29,7 @@ const Theme = () => {
       {/* <Head>
         <meta name="theme-color" content={darkTheme ? "#F8F8FA" : "#171723"} />
       </Head> */}
-      <div className="flex justify-between md:justify-start items-center md:gap-3">
+      <div className="flex items-center justify-between md:justify-start md:gap-3">
         <h2 className="font-bold">Dark Mode</h2>
         <div
           className={`w-16 h-8 rounded-full ${
