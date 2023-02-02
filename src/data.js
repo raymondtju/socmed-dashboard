@@ -1,7 +1,7 @@
 const datas = {
   data: [
     {
-      icon: "/public/images/facebook.png",
+      icon: "./../images/facebook.png",
       name: "facebook",
       username: "nathanf",
       type: "followers",
