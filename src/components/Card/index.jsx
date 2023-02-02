@@ -8,12 +8,13 @@ export default function Card({
   growth,
   isup,
   type,
+  name,
 }) {
   return (
     <div className="relative flex flex-col items-center bg-[#F0F3FC] dark:bg-[#252B43] h-auto rounded overflow-hidden cursor-pointer text-center hover:bg-[#E1E3F0] dark:text-[#FDFEF9] dark:hover:bg-[#333A56] transition-all duration-300 ease-in">
       <span className="absolute w-full h-1 bg-blue-300" />
       <div className="flex items-center gap-2 mt-8 ">
-        <Image src={image} alt="facebook" width={24} height={24} />
+        <Image src={image} alt={name} width={24} height={24} />
         <p className="text-sm font-semibold text-slate-500">@{username}</p>
       </div>
       <div className="mt-5">

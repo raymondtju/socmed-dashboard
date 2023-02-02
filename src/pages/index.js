@@ -35,6 +35,7 @@ export default function Home({ cards, overview }) {
                   growth={card.growth}
                   isup={card.isUp}
                   type={card.type}
+                  name={card.name}
                 />
               );
             })}
